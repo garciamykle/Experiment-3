@@ -1,0 +1,49 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+
+
+{
+    // DECLARATION OF VARIABLES //
+	
+	int i, maxi,mini, n=10;
+    double arr[10], largest, smallest, total, average;
+
+    cout << "Please input 10 different integers: ";
+   
+    cout << endl;
+
+    // Store number entered by the user
+ 	for(i = 0;i < 10; i++)
+		arr[i] = 0.0;
+	for(i = 0;i < 10; i++)
+		cin >> arr[i];
+	// Identifying the total sum of all 10 integers
+	total = 0;
+		for (i = 0;i < 10; i++)
+		total = total + arr[i];
+		cout <<"\nTotal sum of the integers :" << total << endl;
+	// Identifying the average sum of all 10 integers	
+	average = total / 10;
+		cout << "\nAverage sum of the integers: " << average << endl;
+	// Identifying the largest number
+	maxi = 0;
+		for (i = 1;i < 10; i++)
+			if (arr[maxi] < arr[i])
+			maxi = i;
+	largest = arr[maxi];
+		cout << "\nThe Largest Number: " << largest << endl;
+	// Identifying the largest number
+	mini = 0;
+		for (i = 1;i < 10; i++)
+			if (arr[mini] > arr[i])
+			mini = i;	
+	smallest = arr[mini];
+		cout << "\nThe Smallest Number: " << smallest << endl;
+	
+	return 0;
+    
+}
