@@ -5,12 +5,12 @@ using namespace std;
 int main()
 {
 
-	char i, j, temp, arr[100];
-	int n;
-	
+	char i, j,arr[100], temp;
+	int  n;
+	cout<< "Enter the number of elements: ";
+	cin>>n;
 		cout << "Enter the elements to be sorted: ";
-		cin >> n;
-		for(i=0;i<n;i++)
+	for(i=0;i<n;i++)
 	{
 		cin >> arr[i];
 	}
